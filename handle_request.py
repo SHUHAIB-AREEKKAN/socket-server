@@ -1,8 +1,12 @@
+# this module will process and identify the requested serivce
+
+
 import search_file
 import make_header
 
 def request_Parser(request_str):
-	print 'the service requested :{}'.format(request_str.split(' ')[1])
+	''' proceesing the request and return the service if possibel '''
+	print 'the service requested :{}'.format(str(request_str.split(' ')[1]))
 	print 'the service method    :{}'.format(request_str.split(' ')[0])
 	print 'the Http method       :{}'.format(request_str.split(' ')[2][0:8])
 	req_service=request_str.split(' ')[1]

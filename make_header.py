@@ -1,4 +1,4 @@
-#This module provide header for http response message 
+#This module provide header for http response message with HTTP headers
 import time
 
 
@@ -27,7 +27,7 @@ def content_type_header(req_service):
 
 
 def make_header(http_status,req_service):
-	''' to make header for the inputs from client browswer '''
+	''' to make header for the response '''
 	service_type = req_service.split('.')[-1]
 	server_date_hdr='Date:'+time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())+'\n'
 	print 'inputs : {},{}'.format(http_status,req_service) 
