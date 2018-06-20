@@ -2,3 +2,5 @@
 *~
 __pycache__
 set_git_user.py
+*.swp
+server
