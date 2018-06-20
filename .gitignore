@@ -1,0 +1,4 @@
+*.pyc
+*~
+__pycache__
+set_git_user.py
